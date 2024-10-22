@@ -32,5 +32,5 @@ jobs:
             # Fetch file using the OIDC generated token
             - name: Fetch file using the OIDC generated token
               run: |
-                    curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -X GET https://hts2.jfrog.io/artifactory/api/storage/manu-pypi-local/packages/numpy/1.23.2/numpy-1.23.2-cp39-cp39-macosx_10_9_x86_64.whl -vvv
+                    curl -H "Authorization: Bearer ${ACCESS_TOKEN}" -X GET https://hts2.jfrog.io/artifactory/api/storage/dev-pypi-local/my_vulnerable_project/0.1.0/my_vulnerable_project-0.1.0-py3-none-any.whl -vvv
             
